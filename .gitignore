@@ -18,3 +18,7 @@
 
 # Hardhat coverage reports
 /coverage
+
+
+# Env variables (containing private keys)
+.env
