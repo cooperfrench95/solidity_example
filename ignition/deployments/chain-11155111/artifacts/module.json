@@ -1,0 +1,89 @@
+{
+  "_format": "hh3-artifact-1",
+  "contractName": "GetsIncremented",
+  "sourceName": "contracts/GetsIncremented.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "fromAddress",
+          "type": "address"
+        }
+      ],
+      "name": "Incremented",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "checkCalls",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "increment",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "num1",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "num2",
+          "type": "uint32"
+        }
+      ],
+      "name": "sum",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "times_called",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600e575f5ffd5b505f805463ffffffff19169055610217806100285f395ff3fe608060405234801561000f575f5ffd5b506004361061004a575f3560e01c80635cacae7a1461004e578063af8473a814610071578063cda2ebc314610080578063d09de08a146100ac575b5f5ffd5b5f5463ffffffff165b60405163ffffffff90911681526020015b60405180910390f35b5f546100579063ffffffff1681565b61009361008e366004610158565b6100b6565b60405167ffffffffffffffff9091168152602001610068565b6100b46100d5565b005b5f806100cb63ffffffff80851690861661019d565b9150505b92915050565b5f805463ffffffff1690806100e9836101bd565b91906101000a81548163ffffffff021916908363ffffffff16021790555050336001600160a01b03167ff57bb28dda50be2d99bc97dce404fae0ecca665bba60759ec491a82e893e4fd560405160405180910390a2565b803563ffffffff81168114610153575f5ffd5b919050565b5f5f60408385031215610169575f5ffd5b61017283610140565b915061018060208401610140565b90509250929050565b634e487b7160e01b5f52601160045260245ffd5b67ffffffffffffffff81811683821601908111156100cf576100cf610189565b5f63ffffffff821663ffffffff81036101d8576101d8610189565b6001019291505056fea2646970667358221220eb9be3bc3986e6e97aaeffd7b2c14a43b72da729c09d792d73faed8b5faf939164736f6c634300081c0033",
+  "deployedBytecode": "0x608060405234801561000f575f5ffd5b506004361061004a575f3560e01c80635cacae7a1461004e578063af8473a814610071578063cda2ebc314610080578063d09de08a146100ac575b5f5ffd5b5f5463ffffffff165b60405163ffffffff90911681526020015b60405180910390f35b5f546100579063ffffffff1681565b61009361008e366004610158565b6100b6565b60405167ffffffffffffffff9091168152602001610068565b6100b46100d5565b005b5f806100cb63ffffffff80851690861661019d565b9150505b92915050565b5f805463ffffffff1690806100e9836101bd565b91906101000a81548163ffffffff021916908363ffffffff16021790555050336001600160a01b03167ff57bb28dda50be2d99bc97dce404fae0ecca665bba60759ec491a82e893e4fd560405160405180910390a2565b803563ffffffff81168114610153575f5ffd5b919050565b5f5f60408385031215610169575f5ffd5b61017283610140565b915061018060208401610140565b90509250929050565b634e487b7160e01b5f52601160045260245ffd5b67ffffffffffffffff81811683821601908111156100cf576100cf610189565b5f63ffffffff821663ffffffff81036101d8576101d8610189565b6001019291505056fea2646970667358221220eb9be3bc3986e6e97aaeffd7b2c14a43b72da729c09d792d73faed8b5faf939164736f6c634300081c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "immutableReferences": {},
+  "inputSourceName": "project/contracts/GetsIncremented.sol",
+  "buildInfoId": "solc-0_8_28-0a3840a4fef7914278ffdb4360dba94569bc2749"
+}

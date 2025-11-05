@@ -1,0 +1,32 @@
+{
+  "name": "solidity_example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Cooper French <cooperfrench95@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "npx hardhat test",
+    "test:solidity": "npx hardhat test solidity",
+    "test:ts": "npx hardhat test nodejs",
+    "call:sepolia": "tsx scripts/send-sepolia-tx.ts"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^3.0.4",
+    "@nomicfoundation/hardhat-ignition-viem": "^3.0.4",
+    "@nomicfoundation/hardhat-keystore": "^3.0.3",
+    "@nomicfoundation/hardhat-network-helpers": "^3.0.2",
+    "@nomicfoundation/hardhat-node-test-runner": "^3.0.6",
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.1",
+    "@nomicfoundation/hardhat-verify": "^3.0.5",
+    "@nomicfoundation/hardhat-viem": "^3.0.1",
+    "@nomicfoundation/hardhat-viem-assertions": "^3.0.3",
+    "@types/node": "^22.8.5",
+    "dotenv": "^17.2.3",
+    "forge-std": "foundry-rs/forge-std#v1.9.4",
+    "hardhat": "^3.0.11",
+    "tsx": "^4.20.6",
+    "typescript": "~5.8.0",
+    "viem": "^2.30.0"
+  },
+  "type": "module"
+}

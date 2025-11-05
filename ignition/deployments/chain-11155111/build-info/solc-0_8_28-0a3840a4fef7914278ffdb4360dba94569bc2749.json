@@ -1,0 +1,39 @@
+{
+  "_format": "hh3-sol-build-info-1",
+  "id": "solc-0_8_28-0a3840a4fef7914278ffdb4360dba94569bc2749",
+  "solcVersion": "0.8.28",
+  "solcLongVersion": "0.8.28+commit.7893614a",
+  "userSourceNameMap": {
+    "contracts/GetsIncremented.sol": "project/contracts/GetsIncremented.sol"
+  },
+  "input": {
+    "language": "Solidity",
+    "settings": {
+      "evmVersion": "cancun",
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "": [
+            "ast"
+          ],
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ]
+        }
+      },
+      "remappings": []
+    },
+    "sources": {
+      "project/contracts/GetsIncremented.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.28;\n\ncontract GetsIncremented {\n    // State variable, stored on the blockchain and persistent between calls to the contract\n    // This implicitly creates a getter function times_called()\n    uint32 public times_called;\n\n    // Logs an event when emitted. Here we define the arguments to the log function.\n    // This log is cheaper than block storage for the contract and gets baked into the transaction receipt\n    event Incremented(address indexed fromAddress);\n\n    // Constructor only called when contract first deployed\n    constructor() {\n        times_called = 0;\n    }\n\n    // Changes state and costs gas to call.\n    function increment() public {\n        times_called++;\n        emit Incremented(msg.sender);\n    }\n\n    // \"view\" marks this as readonly - it cannot change the state\n    // This function is kinda pointless since the getter already gets created when intialising the state\n    function checkCalls() public view returns (uint32) {\n        return times_called;\n    }\n\n    // \"pure\" makes this a static function with no access to the contract's state - can't even read it\n    function sum(uint32 num1, uint32 num2) public pure returns (uint64) {\n        uint64 result = uint64(num1) + uint64(num2);\n        return result;\n    }\n}\n"
+      }
+    }
+  }
+}
