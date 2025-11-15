@@ -8,7 +8,9 @@
     "test": "npx hardhat test",
     "test:solidity": "npx hardhat test solidity",
     "test:ts": "npx hardhat test nodejs",
-    "call:sepolia": "tsx scripts/send-sepolia-tx.ts"
+    "call:sepolia": "tsx scripts/send-sepolia-tx.ts",
+    "wave": "tsx scripts/wave-at-smart-contract.ts",
+    "swap": "tsx scripts/swap-token.ts"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-ignition": "^3.0.4",
@@ -17,16 +19,27 @@
     "@nomicfoundation/hardhat-network-helpers": "^3.0.2",
     "@nomicfoundation/hardhat-node-test-runner": "^3.0.6",
     "@nomicfoundation/hardhat-toolbox-viem": "^5.0.1",
-    "@nomicfoundation/hardhat-verify": "^3.0.5",
+    "@nomicfoundation/hardhat-verify": "^3.0.7",
     "@nomicfoundation/hardhat-viem": "^3.0.1",
     "@nomicfoundation/hardhat-viem-assertions": "^3.0.3",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@types/big.js": "^6.2.2",
+    "@types/luxon": "^3.7.1",
     "@types/node": "^22.8.5",
+    "@types/yargs": "^17.0.35",
+    "@uniswap/sdk-core": "^7.9.0",
+    "@uniswap/v3-core": "^1.0.1",
+    "@uniswap/v4-sdk": "^1.22.0",
+    "axios": "^1.13.2",
+    "big.js": "^7.0.1",
     "dotenv": "^17.2.3",
     "forge-std": "foundry-rs/forge-std#v1.9.4",
     "hardhat": "^3.0.11",
+    "luxon": "^3.7.2",
     "tsx": "^4.20.6",
     "typescript": "~5.8.0",
-    "viem": "^2.30.0"
+    "viem": "^2.30.0",
+    "yargs": "^18.0.0"
   },
   "type": "module"
 }

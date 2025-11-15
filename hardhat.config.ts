@@ -8,7 +8,7 @@ import hardhatViem from '@nomicfoundation/hardhat-viem';
 import hardhatViemAssertions from '@nomicfoundation/hardhat-viem-assertions';
 import { defineConfig } from "hardhat/config";
 
-export default defineConfig({
+const config = defineConfig({
   plugins: [hardhatToolboxViemPlugin, hardhatViem, hardhatViemAssertions],
   solidity: {
     profiles: {
@@ -43,3 +43,5 @@ export default defineConfig({
     },
   },
 });
+
+export default config
